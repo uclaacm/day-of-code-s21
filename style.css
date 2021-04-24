@@ -1,9 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
-  --main-color: #5EDA12;
+  --main-color: #5eda12;
   color: #333333;
-/*   transition background-color: 0.5s; */
+  /*   transition background-color: 0.5s; */
   padding: 7%;
 }
 
@@ -14,7 +19,7 @@ body {
   /* thick underline   */
   border-bottom: 10px solid var(--main-color);
   display: inline-block;
-  line-height: 0.90;
+  line-height: 0.9;
   margin-top: -20px;
 }
 
@@ -23,19 +28,25 @@ body {
 } */
 
 .projects-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid: auto / 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .project {
-  border: solid 1px var(--main-color);
+  border: solid 3px var(--main-color);
+  border-radius: 20px;
   padding: 30px;
-  margin: 1.6%;
+  margin: 3.6%;
+  max-width: 350px;
+}
+
+.project:hover {
+  background-color: var(--main-color);
 }
 
 .project-image {
-  width: 438px;
+  width: 320px;
   margin-bottom: 30px;
 }
 
@@ -43,7 +54,7 @@ body {
   font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 24px;
   text-decoration: underline var(--main-color);
-/*   border-bottom: 2px solid var(--main-color);
+  /*   border-bottom: 2px solid var(--main-color);
   display: inline;
   line-height: 0.90; */
 }
@@ -58,6 +69,7 @@ body {
 
 .projects-logos {
   margin-bottom: -60px;
+  width: 60%;
 }
 
 .center {
