@@ -37,9 +37,9 @@ body {
   max-width: 350px;
 }
 
-.project:hover {
+/* .project:hover {
   background-color: var(--main-color);
-}
+} */
 
 .project-image {
   width: 320px;
@@ -68,8 +68,18 @@ body {
 }
 
 .projects-logos {
-  margin-bottom: -60px;
-  width: 60%;
+  /* margin-bottom: -60px; */
+  height: 8vh;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .center {
