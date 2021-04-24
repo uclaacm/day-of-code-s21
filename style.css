@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+  --main-color: #5EDA12;
+  color: #333333;
+/*   transition background-color: 0.5s; */
+  padding: 7%;
+}
+
+.projects-title {
+  font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 64px;
+  text-align: center;
+  /* thick underline   */
+  border-bottom: 10px solid var(--main-color);
+  display: inline-block;
+  line-height: 0.90;
+  margin-top: -20px;
+}
+
+/* .projects-title:hover {
+  background-color:var(--main-color);
+} */
+
+.projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.project {
+  border: solid 1px var(--main-color);
+  padding: 30px;
+  margin: 1.6%;
+}
+
+.project-image {
+  width: 438px;
+  margin-bottom: 30px;
+}
+
+.project-name {
+  font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  text-decoration: underline var(--main-color);
+/*   border-bottom: 2px solid var(--main-color);
+  display: inline;
+  line-height: 0.90; */
+}
+
+/* .project:hover .project-name{
+  background-color:var(--main-color);
+} */
+
+.projects-line {
+  margin-top: 50px;
+}
+
+.projects-logos {
+  margin-bottom: -60px;
+}
+
+.center {
+  text-align: center;
+}
