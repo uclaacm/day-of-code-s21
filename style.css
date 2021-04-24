@@ -23,10 +23,6 @@ body {
   margin-top: -20px;
 }
 
-/* .projects-title:hover {
-  background-color:var(--main-color);
-} */
-
 .projects-container {
   display: grid;
   grid: auto / 1fr 1fr 1fr;
@@ -53,15 +49,19 @@ body {
 .project-name {
   font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 24px;
-  text-decoration: underline var(--main-color);
-  /*   border-bottom: 2px solid var(--main-color);
-  display: inline;
-  line-height: 0.90; */
+  font-weight: bold;
+  background-position: left bottom;
+  background-image: linear-gradient(white 0%, var(--main-color) 0%);
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+  transition: all 400ms ease;
+  display: inline-block;
+  line-height: 0.9;
 }
 
-/* .project:hover .project-name{
-  background-color:var(--main-color);
-} */
+.project:hover .project-name {
+  background-size: 100% 85%;
+}
 
 .projects-line {
   margin-top: 50px;
