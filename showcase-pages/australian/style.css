@@ -1,0 +1,31 @@
+.home{
+  background-color: #5F9EA0;
+}
+
+.header{
+  
+  
+}
+
+.desc{
+  color: #FFFF00;
+  text-align: how you want to align text;
+}
+
+.img{
+  text-align: where you want to align the image;
+  height:  the height you want;
+  width:  the width you want;
+}
+
+.lineheader{
+  background-repeat: repeat-x;
+  height: 40px;
+  width: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png");
+  background-size: contain;
+}
+
+.flagimage{
+  width: 10%;
+}

@@ -1,0 +1,24 @@
+.subheading { 
+  color: red;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.center {
+    color:  yellow;
+  text-align: center; 
+}
+
+.bg{ 
+  background-image: url("https://i.pinimg.com/originals/04/62/e6/0462e638ce05a1bc852efc44979f2c2d.jpg");   
+  background-size: 100% 100%;
+  margin-top: 0;
+  padding: 20px;
+}
+
+.img
+{
+  display: block;
+  margin: auto;
+  width: 70%;
+}

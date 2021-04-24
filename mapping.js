@@ -5,6 +5,30 @@ function createListOfProjects() {
       path: "genshin",
       name: "Our Example!",
     },
+    {
+      path: "kimi",
+      name: "Kimi No Na Wa",
+    },
+    {
+      path: "australian",
+      name: "Australian Animals",
+    },
+    {
+      path: "kpop",
+      name: "The Coolest Guy In Kpop",
+    },
+    {
+      path: "salmon",
+      name: "Salmon Sushi!",
+    },
+    {
+      path: "potter",
+      name: "Harry Potter Info!",
+    },
+    {
+      path: "joestar",
+      name: "The Joestar Family (part 1-3)",
+    },
   ];
   let list = "";
   //   <a class="project" href ="https://tinyurl.com/teachlaimg"
