@@ -1,24 +1,22 @@
-.home{
-  background-color: #5F9EA0;
+.home {
+  background-color: #5f9ea0;
 }
 
-.header{
-  
-  
+.header {
 }
 
-.desc{
-  color: #FFFF00;
+.desc {
+  color: #ffff00;
   text-align: how you want to align text;
 }
 
-.img{
+.img {
   text-align: where you want to align the image;
-  height:  the height you want;
-  width:  the width you want;
+  height: the height you want;
+  width: the width you want;
 }
 
-.lineheader{
+.lineheader {
   background-repeat: repeat-x;
   height: 40px;
   width: 100%;
@@ -26,6 +24,10 @@
   background-size: contain;
 }
 
-.flagimage{
+.flagimage {
   width: 10%;
+}
+
+body {
+  text-align: center;
 }

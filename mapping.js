@@ -27,7 +27,11 @@ function createListOfProjects() {
     },
     {
       path: "joestar",
-      name: "The Joestar Family (part 1-3)",
+      name: "The Joestar Family (part 1-5)",
+    },
+    {
+      path: "dogs",
+      name: "Dogs Are Love",
     },
   ];
   let list = "";

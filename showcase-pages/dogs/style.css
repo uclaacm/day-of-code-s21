@@ -1,0 +1,19 @@
+.home{
+  background-color: #FFC0CB;
+  background-image: url("");text-align: center
+}
+
+.header{
+  style your header!!
+}
+
+.desc{
+  color: #0000FF;
+  text-align: how you want to align text;
+}
+
+.img{
+  text-align: where you want to align the image;
+  height:  the height you want;
+  width:  the width you want;
+}
