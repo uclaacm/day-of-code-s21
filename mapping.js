@@ -1,5 +1,5 @@
 function createListOfProjects() {
-  console.log("entered function");
+  //console.log("entered function");
   const siteNames = [
     {
       path: "genshin",
@@ -50,37 +50,42 @@ function createListOfProjects() {
       date: new Date(2021, 3, 24),
     },
   ];
-  let list = "";
-  //   <a class="project" href ="https://tinyurl.com/teachlaimg"
-  //         rel = "noopener noreferrer"
-  //         target = "_blank">
-  //           <img class="project-image" src="https://tinyurl.com/teachlaimg">
-  //           <div class="project-name">Project Name</div>
-  //   </a>
-
   //sort siteNames by newest first
   //TODO: Make it support both ascending/descending date time
   siteNames.sort(
     (first, second) => second.date.getTime() - first.date.getTime()
   );
 
-  for (let proj of siteNames) {
-    console.log(proj);
+  //create new doc element to be added
+  let projectsList = document.createElement("div");
+  projectsList.className = "projects-container";
+  projectsList.id = "projects";
 
-    list +=
-      `<a class="project" rel = "noreferrer noopener" target = "_blank"  href = "showcase-pages/` +
-      proj.path +
-      `/index.html">
-    <img class="project-image" src="showcase-pages/` +
-      proj.path +
-      `/` +
-      proj.path +
-      `.png">
-    <div class="project-name">` +
-      proj.name +
-      `</div>
-  </a>`;
+  //create each new project within grid list
+  for (let proj of siteNames) {
+    //creating anchor element
+    let newProj = document.createElement("a");
+    newProj.className = "project";
+    newProj.rel = "no referrer noopener";
+    newProj.target = "_blank";
+    newProj.href = "showcase-pages/" + proj.path + "/index.html";
+
+    //creating inner image within anchor element
+    let newProjImage = document.createElement("img");
+    newProjImage.className = "project-image";
+    newProjImage.src = "showcase-pages/" + proj.path + "/" + proj.path + ".png";
+    newProj.appendChild(newProjImage);
+
+    //creating title section within anchor
+    let newProjTitle = document.createElement("div");
+    newProjTitle.className = "project-name";
+    let newProjText = document.createTextNode(proj.name);
+    newProjTitle.appendChild(newProjText);
+
+    //adding title to project
+    newProj.appendChild(newProjTitle);
+    //adding new project to list of projects
+    projectsList.appendChild(newProj);
   }
-  console.log(list);
-  return list;
+  document.body.appendChild(projectsList);
 }
