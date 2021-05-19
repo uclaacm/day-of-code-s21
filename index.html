@@ -4,16 +4,39 @@
     <title>Day Of Code 2021</title>
     <meta name = "description" content = "Everyone's beautiful websites from Day of Code!">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dependencies/flickity/flickity.css" media="screen">
+    <script src = "./dependencies/flickity/flickity.js"></script>
     <script src="./mapping.js"></script>
   </head>
   <body>
+    <script src = "./dependencies/flickity/flickity.js"></script>
     <div class="center">
-        <h1 class="projects-title">Day of Code</h1>
+        <h1 class="projects-title projects-header-text">Day of Code</h1>
     </div>
+    <div>
+      <h2 class = "projects-title projects-subheader-text">Winners</h2>
+      <div 
+        class = "winners-container main-carousel" 
+        data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "freeScroll": false}'
+        id = "winner-projects"
+      >
+      </div>
+
+      </div>
+      <script>
+        createListOfWinners();
+      </script>
+    </div>
+
+
+    <div>
+      <h2 class = "projects-title projects-subheader-text">All Projects</h2>
+    </div>
+    <div>
           <script>
             createListOfProjects();
           </script>
-      </div>
+    </div>
       
       
       <hr class="projects-line" id = "separator"></hr>

@@ -14,7 +14,6 @@ body {
 
 .projects-title {
   font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 64px;
   text-align: center;
   /* thick underline   */
   border-bottom: 10px solid var(--main-color);
@@ -23,10 +22,40 @@ body {
   margin-top: -20px;
 }
 
+.projects-header-text {
+  font-size: 64px;
+}
+
+.projects-subheader-text {
+  font-size: 48px;
+}
+
 .projects-container {
   display: grid;
   grid: auto / 1fr 1fr 1fr;
   justify-content: center;
+}
+
+.winners-container {
+  /* display: flex; */
+}
+
+.carousel-cell {
+  /* height: auto; */
+  margin: 10px;
+}
+
+/* .carousel {
+  padding-bottom: 10%;
+} */
+
+.carousel-cell:not(.is-selected) {
+  width: 20%;
+  opacity: 50%;
+}
+
+.carousel-cell.is-selected {
+  width: 25%;
 }
 
 .project {
@@ -34,15 +63,14 @@ body {
   border-radius: 20px;
   padding: 30px;
   margin: 3.6%;
-  max-width: 350px;
+  background-color: white;
+  /* max-width: 350px; */
 }
 
-/* .project:hover {
-  background-color: var(--main-color);
-} */
-
 .project-image {
-  width: 320px;
+  /* max-width: 350px;
+  aspect-ratio: 1 / 1; */
+  width: 80%;
   margin-bottom: 30px;
 }
 
