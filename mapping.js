@@ -106,12 +106,6 @@ function createListOfWinners() {
       date: new Date(2021, 3, 24),
     },
     {
-      path: "genshin",
-      name: "Our Example!",
-      //April 24, 2021
-      date: new Date(2021, 3, 24),
-    },
-    {
       path: "kimi",
       name: "Kimi No Na Wa",
       //April 24, 2021

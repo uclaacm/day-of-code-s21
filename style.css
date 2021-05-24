@@ -43,20 +43,22 @@ body {
 .carousel-cell {
   /* height: auto; */
   margin: 10px;
-}
-
-/* .carousel {
-  padding-bottom: 10%;
-} */
-
-.carousel-cell:not(.is-selected) {
-  width: 20%;
-  opacity: 50%;
-}
-
-.carousel-cell.is-selected {
   width: 30%;
 }
+
+.carousel {
+  padding-bottom: 10%;
+  width: 20%;
+}
+
+.carousel-cell:not(.is-selected) {
+  opacity: 50%;
+  filter: grayscale(60%);
+}
+
+/* .carousel-cell.is-selected {
+  width: 30%;
+}  */
 
 .project {
   border: solid 3px var(--main-color);
