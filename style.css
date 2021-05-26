@@ -16,10 +16,10 @@ body {
   font-family: "Poppins", -apple-system, "Helvetica Neue", sans-serif;
   text-align: center;
   /* thick underline   */
-  border-bottom: 10px solid var(--main-color);
+  border-bottom: 7px solid var(--main-color);
   display: inline-block;
   line-height: 0.9;
-  margin-top: -20px;
+  /* margin-top: 40px; */
 }
 
 .projects-header-text {
@@ -27,17 +27,17 @@ body {
 }
 
 .projects-subheader-text {
-  font-size: 48px;
-}
-
-.projects-container {
-  display: grid;
-  grid: auto / 1fr 1fr 1fr;
-  justify-content: center;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
 .winners-container {
   /* display: flex; */
+}
+
+.second-subheader {
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .carousel-cell {
@@ -59,6 +59,20 @@ body {
 /* .carousel-cell.is-selected {
   width: 30%;
 }  */
+
+.projects-container {
+  display: grid;
+  grid: auto / 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .projects-container {
+    display: grid;
+    grid: auto /  1fr 1fr;
+    justify-content: center;
+  }
+}
 
 .project {
   border: solid 3px var(--main-color);
@@ -82,11 +96,11 @@ body {
   font-weight: bold;
   background-position: left bottom;
   background-image: linear-gradient(white 0%, var(--main-color) 0%);
-  background-size: 100% 10%;
+  background-size: 100% 5px;
   background-repeat: no-repeat;
   transition: all 400ms ease;
   display: inline-block;
-  line-height: 0.9;
+  /* line-height: 0.9; */
 }
 
 .project:hover .project-name {
@@ -94,12 +108,14 @@ body {
 }
 
 .projects-line {
-  margin-top: 50px;
+  margin: 50px 0;
+  background-color: var(--main-color);
+  border: 3.5px solid var(--main-color);
 }
 
 .projects-logos {
-  /* margin-bottom: -60px; */
-  height: 8vh;
+  margin-bottom: -60px;
+  height: 3vw;
 }
 
 .logos-container {
@@ -108,8 +124,9 @@ body {
   justify-items: center;
   justify-content: center;
   align-content: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  /* margin-left: 30%;
+  margin-right: 30%; */
+  gap: 2vw;
 }
 
 .center {

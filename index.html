@@ -11,55 +11,49 @@
   <body>
     <script src = "./dependencies/flickity/flickity.js"></script>
     <div class="center">
-        <h1 class="projects-title projects-header-text">Day of Code</h1>
+        <div class="projects-title projects-header-text">Day of Code</div>
     </div>
     <div>
-      <h2 class = "projects-title projects-subheader-text">Winners</h2>
+      <div class = "projects-title projects-subheader-text">Winners</div>
       <div 
         class = "winners-container main-carousel" 
         data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "freeScroll": false, "imagesLoaded" : true}'
         id = "winner-projects"
-      >
-      </div>
-
-      </div>
+      ></div>
+    <!-- </div> -->
       <script>
         createListOfWinners();
       </script>
     </div>
 
-
     <div>
-      <h2 class = "projects-title projects-subheader-text">All Projects</h2>
+      <div class = "projects-title projects-subheader-text second-subheader">All Projects</div>
     </div>
     <div>
-          <script>
-            createListOfProjects();
-          </script>
+      <script>
+        createListOfProjects();
+      </script>
     </div>
       
-      
-      <hr class="projects-line" id = "separator"></hr>
-      <div class="center logos-container">
-        <a 
-            href = "https://www.uclaacm.com/committees#w" 
-            rel = "noreferrer noopener"
-            target = "_blank"
-        >
-            <img class="projects-logos" 
-            src= "logos/acmW.png"/>
-        </a>
+    <hr class="projects-line" id = "separator"></hr>
+    <div class="center logos-container">
+      <a 
+        href = "https://www.uclaacm.com/committees#w" 
+        rel = "noreferrer noopener"
+        target = "_blank"
+      >
+        <img class="projects-logos" 
+        src= "logos/acmW.png"/>
+      </a>
 
-        <a 
-            href = "https://teachla.uclaacm.com" 
-            rel = "noreferrer noopener"
-            target = "_blank"
-        >
-            <img class="projects-logos" 
-            src= "logos/acmTeachLA.png"/>
-        </a>
-
-      
-      </div>
-    </body>
+      <a 
+        href = "https://teachla.uclaacm.com" 
+        rel = "noreferrer noopener"
+        target = "_blank"
+      >
+        <img class="projects-logos" 
+        src= "logos/acmTeachLA.png"/>
+      </a>
+    </div>
+  </body>
 </html>
