@@ -67,6 +67,12 @@ function createListOfProjects() {
       name: "Butterflies",
       date: new Date(2021, 5, 29),
     },
+
+    {
+      path: "berserk",
+      name: "BERSERK",
+      date: new Date(2021, 5, 29),
+    },
   ];
 
   //sort siteNames by newest first
