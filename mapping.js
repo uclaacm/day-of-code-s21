@@ -7,6 +7,7 @@ function createListOfProjects() {
       //April 24, 2021
       date: new Date(2021, 3, 24),
     },
+
     {
       path: "kimi",
       name: "Kimi No Na Wa",
@@ -48,6 +49,23 @@ function createListOfProjects() {
       name: "Dogs Are Love",
       //April 24, 2021
       date: new Date(2021, 3, 24),
+    },
+    {
+      path: "gravity",
+      name: "Why I Love Gravity Falls!",
+      date: new Date(2021, 5, 29),
+    },
+
+    {
+      path: "ladyBlog",
+      name: "LadyBlog",
+      date: new Date(2021, 5, 29),
+    },
+
+    {
+      path: "butterfly",
+      name: "Butterflies",
+      date: new Date(2021, 5, 29),
     },
   ];
 
