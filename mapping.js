@@ -105,12 +105,44 @@ function createListOfProjects() {
     newProj.appendChild(newProjTitle);
     //adding new project to list of projects
     projectsList.appendChild(newProj);
+
+    if (proj.path === "butterfly") {
+      //adding in the bougie next js one
+      let nextProj = document.createElement("a");
+      nextProj.className = "project";
+      nextProj.rel = "noreferrer noopener";
+      nextProj.target = "_blank";
+      nextProj.href = "https://ucla-day-of-code.vercel.app/";
+
+      //creating inner image within anchor element
+      let nextProjImage = document.createElement("img");
+      nextProjImage.className = "project-image";
+      nextProjImage.src = "showcase-pages/next/next.png";
+      nextProj.appendChild(nextProjImage);
+
+      //creating title section within anchor
+      let nextProjTitle = document.createElement("div");
+      nextProjTitle.className = "project-name";
+      let nextProjText = document.createTextNode("uhhhhh");
+      nextProjTitle.appendChild(nextProjText);
+
+      //adding title to project
+      nextProj.appendChild(nextProjTitle);
+      //adding new project to list of projects
+      projectsList.appendChild(nextProj);
+    }
   }
+
   document.body.appendChild(projectsList);
 }
 
 function createListOfWinners() {
   const winners = [
+    {
+      path: "gravity",
+      name: "Why I Love Gravity Falls!",
+      date: new Date(2021, 5, 29),
+    },
     {
       path: "joestar",
       name: "The Joestar Family (part 1-5)",
@@ -120,12 +152,6 @@ function createListOfWinners() {
     {
       path: "australian",
       name: "Australian Animals",
-      //April 24, 2021
-      date: new Date(2021, 3, 24),
-    },
-    {
-      path: "kimi",
-      name: "Kimi No Na Wa",
       //April 24, 2021
       date: new Date(2021, 3, 24),
     },
